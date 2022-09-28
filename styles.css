@@ -1,0 +1,110 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap');
+
+body {
+    background-color: #252525;
+    color: whitesmoke;
+    text-align: center;
+    margin: 0 auto;
+    line-height: 0%;
+    /* font-family: Helvetica, sans-serif; */
+    font-family: 'Montserrat', sans-serif;
+}
+
+.header { /*Es más practico usar el tag header directamente?*/
+    /* visibility: hidden; */
+    width: 100%;
+    font-size: 18px;
+    background: rgba(27, 27, 27, 0.8);
+    backdrop-filter: blur(25px);
+    height: 45px;
+    vertical-align: middle;
+    position: fixed;
+}
+
+.feed {
+    display: flex;
+    flex-direction: column;
+    /*border: 1px solid whitesmoke;*/
+    width: 50%;
+    padding: 50px 15px;
+    margin: 0 auto;
+    align-items: center;
+}
+
+.post-layout {
+    min-width: 400px;
+    width: 100%;
+    border: 1px solid rgb(66, 66, 66);
+    margin: 10px;
+    background-color: #1b1b1b;
+    border-radius: 10px;
+    text-align: center;
+}
+
+.head {
+    line-height: 10px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.profile-name,
+.date-published {
+    line-height: 10px;
+}
+
+.profile {
+    display: flex;
+    justify-content: space-between;
+    vertical-align: baseline;
+}
+
+.profile-photo img {
+    height: 30px;
+    width: 30px;
+    border-radius: 100%;
+    object-fit: cover;
+}
+
+.profile-name {
+    font-size: 16px;
+    font-weight: bold;
+}
+
+.date-published {
+    font-size: 14px;
+    color: gray;
+}
+
+.profile-name,
+.date-published,
+.head {
+    margin: 8px;
+    height: 30px;
+    text-align: left;
+    vertical-align: middle;
+}
+
+.caption {
+    margin: 8px;
+    padding: 0px 8px 0px 8px;
+    font-size: 14px;
+    text-align: left;
+    vertical-align: middle;
+    box-sizing: inherit ;
+    line-height: 100%;
+}
+
+.caption a {
+    text-decoration: none;
+    color: gray;
+    font-weight: bold;
+}
+
+.content {
+    vertical-align: middle;
+}
+
+.content img {
+    object-fit: contain;
+    width: 100%;
+}
